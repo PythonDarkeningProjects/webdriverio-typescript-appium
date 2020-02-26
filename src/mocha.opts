@@ -1,0 +1,5 @@
+--timeout 500000
+--recursive
+--retries 2
+--color true
+--reporter mocha-allure-reporter

@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "target": "es5",
+        "outDir": "src/out",
+        "rootDir": "src/",
+        "removeComments": true,
+        "paths": {
+            "*": [ "./*" ],
+            "@helpers/*": ["config/helpers/*"],
+            "src/*": ["./src/*"]
+        },
+        "types": ["node", "webdriverio", "@wdio/mocha-framework"]
+    },
+    "include": [
+        "./src/test/**/*.test.ts",
+        "./src/test/**/**/*.hook.ts",
+        "./src/test/**/*.ts",
+        "./src/domain/screens/**/*.screen.ts"
+    ],
+}
